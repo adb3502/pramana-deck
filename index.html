@@ -1,0 +1,385 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><title>Pramana</title><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="Pramana: any claim, traced to the numbers it rests on. Demo day deck, Field Station Rajasthan.">
+<style>
+@font-face{font-family:N;src:url(fonts/newsreader-latin-300-normal.woff2);font-weight:300}
+@font-face{font-family:N;src:url(fonts/newsreader-latin-400-normal.woff2);font-weight:400}
+@font-face{font-family:N;src:url(fonts/newsreader-latin-500-normal.woff2);font-weight:500}
+@font-face{font-family:N;src:url(fonts/newsreader-latin-300-italic.woff2);font-weight:300;font-style:italic}
+@font-face{font-family:N;src:url(fonts/newsreader-latin-400-italic.woff2);font-weight:400;font-style:italic}
+@font-face{font-family:N;src:url(fonts/newsreader-latin-ext-300-normal.woff2);font-weight:300;unicode-range:U+0100-02AF,U+1E00-1EFF}
+@font-face{font-family:N;src:url(fonts/newsreader-latin-ext-400-normal.woff2);font-weight:400;unicode-range:U+0100-02AF,U+1E00-1EFF}
+@font-face{font-family:S;src:url(fonts/instrument-sans-latin-400-normal.woff2);font-weight:400}
+@font-face{font-family:S;src:url(fonts/instrument-sans-latin-500-normal.woff2);font-weight:500}
+@font-face{font-family:S;src:url(fonts/instrument-sans-latin-600-normal.woff2);font-weight:600}
+@font-face{font-family:M;src:url(fonts/jetbrains-mono-latin-400-normal.woff2);font-weight:400}
+@font-face{font-family:M;src:url(fonts/jetbrains-mono-latin-700-normal.woff2);font-weight:700}
+:root{--paper:#E6E8E3;--ink:#18301F;--body:#3D4F43;--muted:#5F6F64;--rule:#A9B3AB;--dark:#13221A;--dtext:#E6E8E3;--dmuted:#9DB0A3;--mark:#F7D678;--stamp:#A93A26;--card:#F4F3EE}
+*{box-sizing:border-box;margin:0;padding:0}
+@page{size:1920px 1080px;margin:0}
+html,body{background:#555}
+body{font-family:S,Arial,sans-serif;color:var(--ink);-webkit-font-smoothing:antialiased}
+.s{width:1920px;height:1080px;position:relative;overflow:hidden;background:var(--paper);padding:120px 128px 150px;display:flex;flex-direction:column;page-break-after:always;break-after:page}
+.s.d{background:var(--dark);color:var(--dtext)}
+h1,h2,.serif{font-family:N,Georgia,serif;font-weight:400;letter-spacing:-0.01em}
+h2{font-size:68px;line-height:1.08;max-width:1500px}
+.lede{font-size:32px;line-height:1.45;color:var(--body);max-width:1250px}
+.d .lede{color:var(--dmuted)}
+.foot{position:absolute;left:48px;right:48px;bottom:56px;border-top:1px solid var(--rule);padding-top:22px;display:flex;justify-content:space-between;font-size:22px;color:var(--muted)}
+.d .foot{border-color:#33473A;color:var(--dmuted)}
+.mk{background:linear-gradient(transparent 50%,var(--mark) 50%,var(--mark) 90%,transparent 90%);padding:0 .12em;color:var(--ink)}
+.small{font-size:24px;color:var(--muted)}
+.d .small{color:var(--dmuted)}
+.stamp{display:inline-block;border:3px solid var(--stamp);color:var(--stamp);font:500 30px N,serif;padding:6px 18px;transform:rotate(-3deg);border-radius:6px}
+table{border-collapse:collapse;width:100%}
+th{font:500 22px S;color:var(--muted);text-align:left;padding:0 24px 16px 0;border-bottom:2px solid var(--ink);vertical-align:bottom}
+td{font-size:28px;line-height:1.3;padding:18px 24px 18px 0;border-bottom:1px solid var(--rule);vertical-align:top}
+td.f{font-weight:600;white-space:nowrap}
+.shot{background:#fff;box-shadow:0 18px 50px rgba(19,34,26,.22);display:block}
+.num{font-family:N,serif;font-weight:400;line-height:1}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:64px}
+.col{border-top:2px solid var(--ink);padding-top:24px;display:flex;flex-direction:column;gap:14px}
+.col h3{font:600 34px/1.25 S}
+.col p{font-size:30px;line-height:1.42;color:var(--body)}
+.lab{font-size:22px;color:var(--muted);font-weight:500}
+</style></head><body>
+
+<!-- 1 cover -->
+<section class="s d" style="justify-content:space-between;padding:110px 128px 100px">
+  <div style="display:flex;justify-content:space-between;align-items:center"><p class="small">Field Station Rajasthan · 30 October 2026</p><img src="img/logos_grama_white.png" alt="Logos and Grama" style="height:54px;opacity:.9"></div>
+  <div>
+    <h1 style="font-size:240px;line-height:.9;letter-spacing:-0.035em">Pramana</h1>
+    <p class="serif" style="font-size:34px;font-style:italic;font-weight:300;color:var(--dmuted);margin-top:28px">pramāṇa (Sanskrit): a valid means of knowing</p>
+    <p class="serif" style="font-size:60px;font-weight:300;line-height:1.15;margin-top:64px;max-width:1400px">Any claim, traced to the numbers it rests on.</p>
+  </div>
+  <div style="display:flex;justify-content:space-between;align-items:end"><p style="font-size:28px">Amruth Deepak Bhat</p><p class="small">Built on Logos</p></div>
+</section>
+
+<!-- 2 question -->
+<section class="s" style="justify-content:center">
+  <h1 style="font-size:132px;line-height:1.02;letter-spacing:-0.025em;max-width:1600px">How much water does one AI answer use?</h1>
+  
+  <div class="foot"><span>Pramana</span><span>2</span></div>
+</section>
+
+<!-- 3 three answers -->
+<section class="s" style="gap:22px;padding-top:80px">
+  <h2 style="margin-bottom:6px">Three published answers</h2>
+    <div style="display:grid;grid-template-columns:520px 1fr;gap:64px;align-items:center;border-top:1px solid var(--rule);padding-top:26px">
+      <div><p class="num" style="font-size:104px"><span class="mk">519 mL</span></p><p style="font:600 28px S;margin-top:14px">A bottle, per 100-word email</p></div>
+      <div style="display:flex;flex-direction:column;gap:12px"><p style="font:500 24px S;color:var(--ink)">Ren et al., Making AI Less “Thirsty”</p><img class="shot" src="img/ren_c.png" style="width:1080px;padding:14px 18px"><p class="small" style="font-size:22px">Washington Post, Sept 2024, using the method of this UC Riverside paper</p></div>
+    </div>
+    <div style="display:grid;grid-template-columns:520px 1fr;gap:64px;align-items:center;border-top:1px solid var(--rule);padding-top:26px">
+      <div><p class="num" style="font-size:104px"><span class="mk">0.26 mL</span></p><p style="font:600 28px S;margin-top:14px">Five drops, per Gemini prompt</p></div>
+      <div style="display:flex;flex-direction:column;gap:12px"><p style="font:500 24px S;color:var(--ink)">Measuring the environmental impact of delivering AI at Google scale</p><img class="shot" src="img/gemini_c.png" style="width:1080px;padding:14px 18px"><p class="small" style="font-size:22px">Elsworth et al., Google, arXiv, Aug 2025</p></div>
+    </div>
+    <div style="display:grid;grid-template-columns:520px 1fr;gap:64px;align-items:center;border-top:1px solid var(--rule);padding-top:26px">
+      <div><p class="num" style="font-size:104px"><span class="mk">0.32 mL</span></p><p style="font:600 28px S;margin-top:14px">A fifteenth of a teaspoon, per query</p></div>
+      <div style="display:flex;flex-direction:column;gap:12px"><p style="font:500 24px S;color:var(--ink)">The Gentle Singularity</p><img class="shot" src="img/altman_c.png" style="width:1080px;padding:14px 18px"><p class="small" style="font-size:22px">Sam Altman, blog, June 2025</p></div>
+    </div>
+  <div class="foot"><span>Pramana</span><span>3</span></div>
+</section>
+
+<!-- 4 dots -->
+<section class="s" style="gap:48px">
+  <h2>The largest answer is 2,000 times the smallest</h2>
+  <div id="dots" style="display:grid;grid-template-columns:repeat(100,1fr);gap:5px;width:1664px"></div>
+  <p class="lede">Each dot is 0.26 mL, Google’s figure. All 2,000 together make the Washington Post’s 519 mL.</p>
+  <div class="foot"><span>519 mL ÷ 0.26 mL ≈ 2,000</span><span>4</span></div>
+</section>
+
+<!-- 5 receipt -->
+<section class="s" style="gap:40px;padding-top:100px">
+  <div style="display:flex;justify-content:space-between;align-items:end">
+    <h2>The three figures measure different things</h2>
+  </div>
+  <table>
+    <tr><th style="width:19%"></th><th style="width:27%">Washington Post</th><th style="width:27%">Google</th><th style="width:27%">Sam Altman</th></tr>
+    <tr><td class="f">Unit</td><td>a 100-word email</td><td>the median text prompt</td><td>the average query</td></tr>
+    <tr><td class="f">Model, year</td><td>GPT-4, 2024</td><td>Gemini, 2025</td><td>ChatGPT, 2025</td></tr>
+    <tr><td class="f">Water counted</td><td><span class="mk">cooling + power plants</span></td><td><span class="mk">on-site cooling only</span></td><td><span class="mk">not stated</span></td></tr>
+    <tr><td class="f">Statistic</td><td>one figure</td><td>median</td><td>average</td></tr>
+    <tr><td class="f">Method shown</td><td>yes, with UC Riverside</td><td>yes, arXiv paper</td><td>no</td></tr>
+  </table>
+  <p class="lede" style="max-width:1500px">The Post counts water used to generate the electricity; Google counts only cooling water at the data center; Altman does not say. The news coverage did not report which.</p>
+  <div class="foot"><span>Pramana receipt, AI water</span><span>5</span></div>
+</section>
+
+<!-- 6 everywhere -->
+<section class="s" style="gap:52px">
+  <h2>Most claims reach the public without their source</h2>
+  <div style="display:grid;grid-template-columns:800px 1fr;gap:96px;align-items:start">
+    <div style="display:flex;flex-direction:column;gap:40px">
+      <div><p class="num" style="font-size:150px;color:var(--stamp)">0 of 634</p><p style="font-size:30px;line-height:1.4;color:var(--body);margin-top:18px">claims about AI water, in 77 news stories, link to the study they rest on.</p></div>
+      <div style="display:flex;flex-direction:column;gap:10px">
+        <div style="display:flex;height:56px;width:780px">
+          <div style="width:44%;background:#18301F"></div><div style="width:53%;background:#8FA394"></div><div style="width:3%;background:#E2A90F"></div>
+        </div>
+        <div style="display:flex;width:780px;font-size:22px;color:var(--body)">
+          <span style="width:44%">No source, 44%</span><span style="width:46%">“A study found”, 53%</span><span>Findable, 2%</span>
+        </div>
+      </div>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:20px">
+      <img class="shot" src="img/tweet.png" style="width:100%;height:520px;object-fit:cover;object-position:top">
+      <p style="font-size:26px;line-height:1.4;color:var(--body)">Moses showed me this post on day five. The paper studied 424 adults over 60 in one city, measured once; the most negative thinkers scored 1.6 points lower on a 30-point test.</p>
+    </div>
+  </div>
+  <div class="foot"><span>Counts produced by Pramana this week</span><span>6</span></div>
+</section>
+
+<!-- 6b citations -->
+<section class="s" style="display:grid;grid-template-columns:620px 1fr;gap:80px;align-items:center">
+  <div style="display:flex;flex-direction:column;gap:32px">
+    <h2 style="font-size:64px">The drift starts inside the paper</h2>
+    <p style="font-size:30px;line-height:1.45;color:var(--body)">We checked each of the 50 sentences in the Wuhan paper that cite another study against the study it cites.</p>
+    <p style="font-size:30px;line-height:1.45;color:var(--body)">Two are fully supported. Its line that negative thinking “depletes the brain’s limited resources” cites an eye-tracking experiment on attention.</p>
+  </div>
+  <img src="img/ye_audit.png" alt="Citation audit of Ye et al. 2025: 2 supports, 18 partially, 12 do not support, 6 not evidence, 12 unverifiable" style="width:100%">
+  <div class="foot"><span>Citation audit, Ye et al., BMC Psychiatry 2025</span><span>7</span></div>
+</section>
+
+<!-- 6c nyaya -->
+<section class="s d" style="gap:56px">
+  <h2 style="color:var(--dtext)">Pramāṇa, from Nyāya: the means by which knowledge is valid</h2>
+  <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:40px">
+    <div class="col" style="border-color:#E6E8E3"><p class="serif" style="font-size:52px;font-style:italic;color:var(--mark)">pratyakṣa</p><p style="font-size:28px;color:var(--dtext)">perception</p><p style="font-size:24px;line-height:1.4;color:var(--dmuted)">The measurement: 424 people, one test, one number.</p></div>
+    <div class="col" style="border-color:#E6E8E3"><p class="serif" style="font-size:52px;font-style:italic;color:var(--mark)">anumāna</p><p style="font-size:28px;color:var(--dtext)">inference</p><p style="font-size:24px;line-height:1.4;color:var(--dmuted)">What the design permits: association, not cause.</p></div>
+    <div class="col" style="border-color:#E6E8E3"><p class="serif" style="font-size:52px;font-style:italic;color:var(--mark)">upamāna</p><p style="font-size:28px;color:var(--dtext)">comparison</p><p style="font-size:24px;line-height:1.4;color:var(--dmuted)">Every other study on the same question.</p></div>
+    <div class="col" style="border-color:#E6E8E3"><p class="serif" style="font-size:52px;font-style:italic;color:var(--dmuted)">śabda</p><p style="font-size:28px;color:var(--dtext)">testimony</p><p style="font-size:24px;line-height:1.4;color:var(--dmuted)">The headline, the post, the press release.</p></div>
+  </div>
+  <p class="lede" style="max-width:1600px;color:#C9D3CB">Almost everything we know about science arrives as śabda. Pramana walks each piece of testimony back to the perception and inference underneath it, and sets it beside the comparisons.</p>
+  <div class="foot"><span>Nyāya Sūtra, Gautama</span><span>8</span></div>
+</section>
+
+<!-- 6d anatomy -->
+<section class="s" style="gap:44px">
+  <h2>A claim is a set of fields, compared one by one</h2>
+  <p class="serif" style="font-size:52px;line-height:1.2;font-weight:300"><span class="mk">negative thinking</span> <span style="border-bottom:4px solid #A93A26">destroys</span> <span class="mk">your brain</span></p>
+  <table>
+    <tr><th style="width:16%">Field</th><th style="width:30%">Paper</th><th style="width:22%">Post</th><th style="width:32%">Difference, fidelity lens v1</th></tr>
+    <tr><td class="f">Subject</td><td>repetitive negative thinking</td><td>negative thinking</td><td>none</td></tr>
+    <tr><td class="f">Outcome</td><td>MoCA score, a 30-point test</td><td>your brain</td><td style="color:#A93A26">measure read as organ</td></tr>
+    <tr><td class="f">Relation</td><td>associated with</td><td>destroys</td><td style="color:#A93A26">association read as cause</td></tr>
+    <tr><td class="f">Size</td><td>1.6 points lower</td><td>destroys</td><td style="color:#A93A26">inflated</td></tr>
+    <tr><td class="f">Population</td><td>424 adults over 60, Wuhan</td><td>you</td><td style="color:#A93A26">overgeneralized</td></tr>
+    <tr><td class="f">Certainty</td><td>“further studies needed”</td><td>stated as fact</td><td style="color:#A93A26">hedge dropped</td></tr>
+  </table>
+  <div class="foot"><span>Subject and outcome are pinned to Wikidata IDs so the same idea matches across papers</span><span>9</span></div>
+</section>
+
+<!-- 6e profile -->
+<section class="s" style="display:grid;grid-template-columns:600px 1fr;gap:72px;align-items:center">
+  <div style="display:flex;flex-direction:column;gap:32px">
+    <h2 style="font-size:64px">Coffee and mortality: 16 studies, 437 estimates</h2>
+    <p style="font-size:30px;line-height:1.45;color:var(--body)">Each row is a study; each dot is one estimate it reports, for one dose, subgroup or model. Most sit just below 1.</p>
+    <p style="font-size:30px;line-height:1.45;color:var(--body)">A headline picks one dot. Pramana shows the whole field, with each dot linked to its sentence.</p>
+  </div>
+  <img src="img/coffee_mortality.png" alt="Estimates of coffee and mortality across 16 studies" style="width:100%;max-height:800px;object-fit:contain">
+  <div class="foot"><span>From the Pramana knowledge base</span><span>10</span></div>
+</section>
+
+<!-- 8 product -->
+<section class="s" style="display:grid;grid-template-columns:520px 1fr;gap:72px;align-items:center;padding-top:96px">
+  <div style="display:flex;flex-direction:column;gap:36px">
+    <h2 style="font-size:64px">Pramana app: search the evidence behind a claim</h2>
+    <p style="font-size:30px;line-height:1.45;color:var(--body)">Paste a headline, a post or a sentence. The app breaks it into subject, outcome, population, effect size and certainty, and compares each with the papers that measured it.</p>
+    <p style="font-size:30px;line-height:1.45;color:var(--body)">It does not output true or false. It shows the numbers and where they came from.</p>
+  </div>
+  <img class="shot" src="img/app_water_c.png" style="width:100%">
+  <div class="foot"><span>Pramana</span><span>11</span></div>
+</section>
+
+<!-- 8a views -->
+<section class="s" style="gap:40px">
+  <h2>The app has three views</h2>
+  <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:44px"><div style="display:flex;flex-direction:column;gap:16px"><img class="shot" src="img/app_check_c.png" style="width:100%;height:560px;object-fit:cover;object-position:left top"><p style="font:600 28px S">Check</p><p style="font-size:24px;line-height:1.4;color:var(--body)">Paste any claim. See its receipt and the studies that measured it.</p></div><div style="display:flex;flex-direction:column;gap:16px"><img class="shot" src="img/app_gallery_top_c.png" style="width:100%;height:560px;object-fit:cover;object-position:left top"><p style="font:600 28px S">Receipts</p><p style="font-size:24px;line-height:1.4;color:var(--body)">Published claims set against the sources they cite.</p></div><div style="display:flex;flex-direction:column;gap:16px"><img class="shot" src="img/app_map_c.png" style="width:100%;height:560px;object-fit:cover;object-position:left top"><p style="font:600 28px S">Evidence map</p><p style="font-size:24px;line-height:1.4;color:var(--body)">Every exposure and outcome in the knowledge base, with the direction of each study’s headline estimate.</p></div></div>
+  <div class="foot"><span>Pramana app</span><span>12</span></div>
+</section>
+
+<!-- 8b protocol -->
+<section class="s" style="gap:48px">
+  <h2>Pramana protocol: shared data, separate lenses</h2>
+  <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:44px;align-items:stretch">
+<div class="col"><span class="lab">Contributors</span><h3 style="font:600 30px/1.25 S">Run the pinned pipeline</h3><p style="font-size:25px">Same prompts, model versions and schema, each pinned by hash. Contributors bring their own API keys.</p></div>    <div class="col" style="background:#F7D678;padding:24px 22px;border-top:2px solid #18301F"><span class="lab" style="color:#3D4F43">Data layer, on Logos Storage</span><h3 style="font:600 30px/1.25 S">What each paper reported</h3><p style="font-size:25px;color:#18301F">Estimates, intervals, populations and designs, each with a pointer to its sentence. Two independent extractions must agree. No verdicts.</p></div>
+<div class="col"><span class="lab">Lenses</span><h3 style="font:600 30px/1.25 S">Signed rules that interpret the data</h3><p style="font-size:25px">A lens decides what counts as faithful, inflated or causal. Pramana’s fidelity lens v1 is one. Anyone can publish another.</p></div><div class="col"><span class="lab">Readers</span><h3 style="font:600 30px/1.25 S">Any client</h3><p style="font-size:25px">Query a local copy through any lens, or none. Where two lenses disagree, the reader sees both.</p></div>
+  </div>
+  <p class="lede" style="max-width:1600px">Judgments never enter the data layer. People can argue about lenses because the facts underneath are shared.</p>
+  <div class="foot"><span>Try it: adb3502.github.io/pramana-protocol</span><span>13</span></div>
+</section>
+
+<!-- 8c architecture -->
+<section class="s" style="gap:40px;padding-top:96px">
+  <h2>Architecture</h2>
+  <div style="display:grid;grid-template-columns:repeat(5,1fr);gap:28px;align-items:start">
+<div style="display:flex;flex-direction:column;gap:14px"><p class="lab" style="font-size:22px">1 · Sources</p><div style="background:#F4F3EE;border:1px solid #A9B3AB;padding:16px 18px"><p style="font:600 24px S;color:#18301F">PubMed Central</p><p style="font-size:20px;color:#5F6F64;margin-top:4px">full text, JATS XML</p></div><div style="background:#F4F3EE;border:1px solid #A9B3AB;padding:16px 18px"><p style="font:600 24px S;color:#18301F">OpenAlex</p><p style="font-size:20px;color:#5F6F64;margin-top:4px">open PDFs; abstracts otherwise</p></div><div style="background:#F4F3EE;border:1px solid #A9B3AB;padding:16px 18px"><p style="font:600 24px S;color:#18301F">News and posts</p><p style="font-size:20px;color:#5F6F64;margin-top:4px">RSS, pages, screenshots</p></div></div><div style="display:flex;flex-direction:column;gap:14px"><p class="lab" style="font-size:22px">2 · Read</p><div style="background:#F4F3EE;border:1px solid #A9B3AB;padding:16px 18px"><p style="font:600 24px S;color:#18301F">Parse</p><p style="font-size:20px;color:#5F6F64;margin-top:4px">sections, tables, figures</p></div><div style="background:#F4F3EE;border:1px solid #A9B3AB;padding:16px 18px"><p style="font:600 24px S;color:#18301F">Reader A</p><p style="font-size:20px;color:#5F6F64;margin-top:4px">Claude Haiku</p></div><div style="background:#F4F3EE;border:1px solid #A9B3AB;padding:16px 18px"><p style="font:600 24px S;color:#18301F">Reader B</p><p style="font-size:20px;color:#5F6F64;margin-top:4px">Laya, open model, our GPU</p></div></div><div style="display:flex;flex-direction:column;gap:14px"><p class="lab" style="font-size:22px">3 · Check</p><div style="background:#F4F3EE;border:1px solid #A9B3AB;padding:16px 18px"><p style="font:600 24px S;color:#18301F">Validate</p><p style="font-size:20px;color:#5F6F64;margin-top:4px">schema, units, ranges</p></div><div style="background:#F4F3EE;border:1px solid #A9B3AB;padding:16px 18px"><p style="font:600 24px S;color:#18301F">Agreement gate</p><p style="font-size:20px;color:#5F6F64;margin-top:4px">A vs B, field by field</p></div><div style="background:#F4F3EE;border:1px solid #A9B3AB;padding:16px 18px"><p style="font:600 24px S;color:#18301F">Judge</p><p style="font-size:20px;color:#5F6F64;margin-top:4px">Claude Sonnet on disputes</p></div></div><div style="display:flex;flex-direction:column;gap:14px"><p class="lab" style="font-size:22px">4 · Know</p><div style="background:#F4F3EE;border:1px solid #A9B3AB;padding:16px 18px"><p style="font:600 24px S;color:#18301F">Concepts</p><p style="font-size:20px;color:#5F6F64;margin-top:4px">MeSH and Wikidata IDs</p></div><div style="background:#F4F3EE;border:1px solid #A9B3AB;padding:16px 18px"><p style="font:600 24px S;color:#18301F">Evidence graph</p><p style="font-size:20px;color:#5F6F64;margin-top:4px">DuckDB, 1,055 papers</p></div><div style="background:#F4F3EE;border:1px solid #A9B3AB;padding:16px 18px"><p style="font:600 24px S;color:#18301F">Lenses</p><p style="font-size:20px;color:#5F6F64;margin-top:4px">signed rules that interpret the data</p></div></div><div style="display:flex;flex-direction:column;gap:14px"><p class="lab" style="font-size:22px">5 · Share</p><div style="background:#F7D678;border:1px solid #A9B3AB;padding:16px 18px"><p style="font:600 24px S;color:#18301F">Snapshot</p><p style="font-size:20px;color:#5F6F64;margin-top:4px">SQLite, content-addressed</p></div><div style="background:#F7D678;border:1px solid #A9B3AB;padding:16px 18px"><p style="font:600 24px S;color:#18301F">Logos Storage</p><p style="font-size:20px;color:#5F6F64;margin-top:4px">retrieve by content ID</p></div><div style="background:#F7D678;border:1px solid #A9B3AB;padding:16px 18px"><p style="font:600 24px S;color:#18301F">Basecamp module</p><p style="font-size:20px;color:#5F6F64;margin-top:4px">queries run locally</p></div></div>
+  </div>
+  <div style="display:grid;grid-template-columns:4fr 1fr;gap:28px;margin-top:-8px">
+    <div style="border-top:3px solid #18301F;padding-top:14px"><p style="font:600 26px S">Pramana protocol</p><p style="font-size:22px;color:var(--muted)">Stages 1 to 4, pinned by hash. Anyone can run them with their own API keys. Lenses sit on top.</p></div>
+    <div style="border-top:3px solid #E2A90F;padding-top:14px"><p style="font:600 26px S">Pramana app</p><p style="font-size:22px;color:var(--muted)">One reader of the shared knowledge base.</p></div>
+  </div>
+  <p class="lede" style="font-size:28px;max-width:1660px">The pipeline records input and output hashes in an append-only ledger, and every extracted number keeps a pointer to the sentence, table or figure it came from.</p>
+  <div class="foot"><span>Yellow: the Logos layer</span><span>14</span></div>
+</section>
+
+<!-- 9 engine -->
+<section class="s" style="gap:64px">
+  <h2>How a paper enters the knowledge base</h2>
+  <div style="display:grid;grid-template-columns:repeat(5,1fr);gap:0">
+    <div class="col" style="padding-right:32px"><span class="lab">1</span><p style="font-size:28px;color:var(--ink)">Fetch the full text, tables and supplements</p></div>
+    <div class="col" style="padding-right:32px"><span class="lab">2</span><p style="font-size:28px;color:var(--ink)">Two models extract every estimate independently</p></div>
+    <div class="col" style="padding-right:32px"><span class="lab">3</span><p style="font-size:28px;color:var(--ink)">A judge settles where they disagree</p></div>
+    <div class="col" style="padding-right:32px"><span class="lab">4</span><p style="font-size:28px;color:var(--ink)">Concepts pinned to Wikidata IDs</p></div>
+    <div class="col"><span class="lab">5</span><p style="font-size:28px;color:var(--ink)">Claims matched to the evidence</p></div>
+  </div>
+  <div style="display:flex;gap:110px;margin-top:8px">
+    <div><p class="num" style="font-size:112px">1,055</p><p class="lede" style="font-size:26px;margin-top:10px">papers, seven topics</p></div>
+    <div><p class="num" style="font-size:112px">61,000+</p><p class="lede" style="font-size:26px;margin-top:10px">numbers, each linked to its sentence</p></div>
+    <div><p class="num" style="font-size:112px"><span class="mk">14¢</span></p><p class="lede" style="font-size:26px;margin-top:10px">per paper, all in</p></div>
+  </div>
+  <div class="foot"><span>Readers: Claude Haiku and Laya, a small open model on our own GPU. Judge: Claude Sonnet.</span><span>15</span></div>
+</section>
+
+<!-- 10 logos -->
+<section class="s" style="gap:48px">
+  <div><img src="img/logos_ink.png" alt="Logos" style="height:60px;margin-bottom:28px;display:block"><h2>What Logos provides</h2><p class="lede" style="margin-top:20px">Without it, every user would have to trust my server, my copy of the data and my logs.</p></div>
+  <table>
+    <tr><th style="width:38%">What a receipt needs</th><th style="width:44%">Logos does the work</th><th style="width:18%">Status</th></tr>
+    <tr><td>Proof it wasn’t edited after printing</td><td>Storage: every evidence snapshot has a content ID</td><td>live</td></tr>
+    <tr><td>Looking up a claim reveals nothing about you</td><td>Basecamp: the graph runs on your machine</td><td>built</td></tr>
+    <tr><td>Readers add the source a post left out</td><td>Messaging: notes travel peer to peer</td><td>next</td></tr>
+    <tr><td>Notes agreed across sides outrank one side</td><td>Blockchain: stake on bridging ratings</td><td>next</td></tr>
+  </table>
+  <div class="foot"><span>Snapshot on Logos Storage: zDvZRwzm9SDY3WQvdd87mQPz1xquMwQELC18qdPVCRUQ9f4hZPtq</span><span>16</span></div>
+</section>
+
+<!-- 11 demo -->
+<section class="s d" style="justify-content:space-between">
+  <h2 style="font-size:104px;color:var(--dtext)">Demo</h2>
+  <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:48px">
+    <div class="col" style="border-color:var(--dtext)"><p class="num" style="font-size:80px;color:var(--mark)">1</p><p style="font-size:30px;line-height:1.35;color:var(--dtext)">Paste the water question into Pramana in Basecamp</p></div>
+    <div class="col" style="border-color:var(--dtext)"><p class="num" style="font-size:80px;color:var(--mark)">2</p><p style="font-size:30px;line-height:1.35;color:var(--dtext)">Read the receipt, field by field</p></div>
+    <div class="col" style="border-color:var(--dtext)"><p class="num" style="font-size:80px;color:var(--mark)">3</p><p style="font-size:30px;line-height:1.35;color:var(--dtext)">Open the sentence each number came from</p></div>
+    <div class="col" style="border-color:var(--dtext)"><p class="num" style="font-size:80px;color:var(--mark)">4</p><p style="font-size:30px;line-height:1.35;color:var(--dtext)">Match the snapshot’s content ID on Logos Storage</p></div>
+  </div>
+  <p class="small" style="font-size:28px">Then yours: bring any claim about coffee, aging, diabetes or AI water.</p>
+  <div class="foot"><span>Live demo</span><span>17</span></div>
+</section>
+
+<!-- 12 security -->
+<section class="s" style="display:grid;grid-template-columns:1060px 1fr;gap:96px;align-content:start">
+  <div style="display:flex;flex-direction:column;gap:44px">
+    <h2>Threat model</h2>
+    <table>
+      <tr><th style="width:44%">Threat</th><th>Defense</th></tr>
+      <tr><td>A tampered snapshot</td><td>Content ID mismatch; the module refuses it</td></tr>
+      <tr><td>A model misreads a paper</td><td>Two readers, a judge, and every number points to its sentence</td></tr>
+      <tr><td>Someone logs what you check</td><td>Queries never leave your device</td></tr>
+      <tr><td>A biased verdict</td><td>Verdicts live in signed, swappable lenses, never in the data</td></tr>
+      <tr><td>Brigaded notes</td><td>Bridging ratings with stake (next)</td></tr>
+    </table>
+  </div>
+  <div style="display:flex;flex-direction:column;gap:26px;padding-top:150px">
+    <h3 style="font:600 30px S">Known limits</h3>
+    <p style="font-size:27px;line-height:1.4;color:var(--body)">Open-access papers read in full; paywalled ones from the abstract only, and labeled so.</p>
+    <p style="font-size:27px;line-height:1.4;color:var(--body)">1,055 papers is a sample, not a library.</p>
+    <p style="font-size:27px;line-height:1.4;color:var(--body)">Extraction accuracy against human annotators: not yet measured.</p>
+    <p style="font-size:27px;line-height:1.4;color:var(--body)">English text only.</p>
+  </div>
+  <div class="foot"><span>Tested core path: snapshot loads in 0.7 s; queries checked against the source graph</span><span>18</span></div>
+</section>
+
+<!-- 13 privacy -->
+<section class="s" style="gap:56px;justify-content:center">
+  <h2>Who can see what</h2>
+  <table>
+    <tr><th style="width:30%">Who</th><th>What they can see</th></tr>
+    <tr><td>You</td><td>Your claim, your receipt, the full evidence graph on your own disk</td></tr>
+    <tr><td>Me</td><td>Nothing. No account, no server, no analytics</td></tr>
+    <tr><td>Logos Storage nodes</td><td>The public snapshot, never the questions asked of it</td></tr>
+    <tr><td>A note you choose to post</td><td>Signed with your key</td></tr>
+  </table>
+  <p class="lede" style="max-width:1600px">Lookups run on the user’s machine, so checking a health or political claim leaves no record anywhere. Two of the seven topics came from residents’ requests this week.</p>
+  <div class="foot"><span>Track fit</span><span>19</span></div>
+</section>
+
+<!-- 13b use cases -->
+<section class="s" style="gap:48px">
+  <h2>Where a receipt changes a decision</h2>
+  <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:48px 48px"><div class="col" style="gap:10px"><h3 style="font:600 30px/1.2 S">Newsrooms</h3><p style="font-size:25px;line-height:1.4;color:var(--body)">A receipt beside every science claim, checked before it ships.</p></div><div class="col" style="gap:10px"><h3 style="font:600 30px/1.2 S">Community notes</h3><p style="font-size:25px;line-height:1.4;color:var(--body)">Notes that carry the numbers, not just a link.</p></div><div class="col" style="gap:10px"><h3 style="font:600 30px/1.2 S">AI assistants</h3><p style="font-size:25px;line-height:1.4;color:var(--body)">Answers that cite receipts instead of memory, through an MCP server.</p></div><div class="col" style="gap:10px"><h3 style="font:600 30px/1.2 S">Regulators</h3><p style="font-size:25px;line-height:1.4;color:var(--body)">Water permits for data centers in Rajasthan decided on counted water, not headlines.</p></div><div class="col" style="gap:10px"><h3 style="font:600 30px/1.2 S">Courts</h3><p style="font-size:25px;line-height:1.4;color:var(--body)">Every number in an expert report traced to its source.</p></div><div class="col" style="gap:10px"><h3 style="font:600 30px/1.2 S">Journals and reviewers</h3><p style="font-size:25px;line-height:1.4;color:var(--body)">A citation audit of each manuscript before it is accepted.</p></div><div class="col" style="gap:10px"><h3 style="font:600 30px/1.2 S">Funders</h3><p style="font-size:25px;line-height:1.4;color:var(--body)">A map of where evidence is thin, to decide which replications to pay for.</p></div><div class="col" style="gap:10px"><h3 style="font:600 30px/1.2 S">Prediction markets</h3><p style="font-size:25px;line-height:1.4;color:var(--body)">Questions that resolve on the evidence record.</p></div></div>
+  <div class="foot"><span>Use cases</span><span>20</span></div>
+</section>
+
+<!-- 14 adoption -->
+<section class="s" style="gap:80px;justify-content:center">
+  <h2>Users after the residency</h2>
+  <div class="grid3">
+    <div class="col"><h3>Science desks and fact-checkers</h3><p>Paste a line before it ships. The receipt goes in the footnote.</p></div>
+    <div class="col"><h3>Researchers writing reviews</h3><p>The graph is the first pass of a systematic review, at 14¢ a paper instead of a month of reading.</p></div>
+    <div class="col"><h3>Contributors</h3><p>Labs and journal clubs add the papers in their field, with their own API keys.</p></div>
+  </div>
+  <p class="lede" style="max-width:1600px">Feedback: disputes filed by readers become labeled examples for retraining the open extraction model. An MCP server lets AI agents query the same knowledge base.</p>
+  <div class="foot"><span>Path to adoption</span><span>21</span></div>
+</section>
+
+<!-- 15 milestones -->
+<section class="s" style="gap:80px;justify-content:center">
+  <h2>Next three milestones</h2>
+  <div class="grid3">
+    <div class="col"><span class="lab">1 · Release</span><p style="color:var(--ink);font-size:30px">Protocol spec and contributor tool published. Basecamp app on testnet. Snapshots on Logos Storage. 10,000 papers.</p></div>
+    <div class="col"><span class="lab">2 · Pilot</span><p style="color:var(--ink);font-size:30px">Two desks use it for a month. Accuracy measured against human annotators. A public report of what broke.</p></div>
+    <div class="col"><span class="lab">3 · Adoption</span><p style="color:var(--ink);font-size:30px">Agreement checking across independent contributors. Notes over Messaging. MCP server. Self-audit. A named operator running a node.</p></div>
+  </div>
+  <div class="foot"><span>Owner: Amruth Deepak Bhat</span><span>22</span></div>
+</section>
+
+<!-- 16 close -->
+<section class="s d" style="justify-content:space-between;padding:110px 128px 100px">
+  <p class="small">Goal</p>
+  <div>
+    <p class="serif" style="font-size:96px;line-height:1.06;letter-spacing:-0.02em;max-width:1640px">A public record of what the evidence says, grown by anyone and owned by no one.</p>
+    <p class="serif" style="font-size:44px;font-style:italic;font-weight:300;color:#C9D3CB;margin-top:56px;max-width:1500px">Next time someone tells you how much water your question used, ask which water they counted.</p>
+  </div>
+  <div style="display:flex;justify-content:space-between;align-items:end"><p style="font-size:26px;line-height:1.5">Amruth Deepak Bhat<br><span style="color:var(--dmuted)">github.com/adb3502/pramana · adb3502.github.io/pramana-protocol</span></p><img src="img/logos_grama_white.png" alt="Logos and Grama" style="height:46px;opacity:.85"></div>
+</section>
+
+<script>
+const g=document.getElementById('dots');let h='';for(let i=0;i<2000;i++){h+=`<i style="display:block;aspect-ratio:1;border-radius:50%;background:${i===1337?'#E9B825':'#18301F'};${i===1337?'transform:scale(2.2);box-shadow:0 0 0 2px #F7D678':''}"></i>`}g.innerHTML=h;
+</script>
+<style>
+@media screen{
+ html,body{background:#0E1813;margin:0}
+ body{display:flex;flex-direction:column;align-items:center;gap:24px;padding:24px 0 80px}
+ .wrap{position:relative;overflow:hidden;box-shadow:0 8px 30px rgba(0,0,0,.35);flex:none}
+ .wrap>section{position:absolute;top:0;left:0;transform-origin:0 0}
+ .bar{position:fixed;right:16px;bottom:16px;display:flex;gap:8px;z-index:9}
+ .bar a{font:500 14px 'S',Arial,sans-serif;color:#E6E8E3;background:#18301F;border:1px solid #33473A;padding:8px 12px;text-decoration:none;border-radius:4px}
+ body.present{padding:0;gap:0;justify-content:center;height:100vh;overflow:hidden}
+ body.present .wrap{display:none;box-shadow:none}
+ body.present .wrap.on{display:block}
+ body.present .bar{opacity:.0}
+ body.present .bar:hover{opacity:1}
+}
+</style>
+<div class="bar"><a href="Pramana.pdf">PDF</a><a href="Pramana.pptx">PPTX</a><a href="#" id="pres">Present (P)</a></div>
+<script>
+(function(){
+ const secs=[...document.querySelectorAll('section.s')];
+ const wraps=secs.map(s=>{const w=document.createElement('div');w.className='wrap';s.parentNode.insertBefore(w,s);w.appendChild(s);return w});
+ let cur=0;
+ function fit(){const pres=document.body.classList.contains('present');
+  const W=pres?innerWidth:Math.min(innerWidth-32,1280);const H=pres?innerHeight:W*9/16;const k=Math.min(W/1920,H/1080);
+  wraps.forEach(w=>{w.style.width=1920*k+'px';w.style.height=1080*k+'px';w.firstChild.style.transform='scale('+k+')'})}
+ function show(i){cur=Math.max(0,Math.min(wraps.length-1,i));wraps.forEach((w,j)=>w.classList.toggle('on',j===cur));
+  if(!document.body.classList.contains('present'))wraps[cur].scrollIntoView({behavior:'smooth',block:'center'})}
+ function toggle(){document.body.classList.toggle('present');fit();show(cur);
+  if(document.body.classList.contains('present')&&document.documentElement.requestFullscreen)document.documentElement.requestFullscreen().catch(()=>{})}
+ document.getElementById('pres').onclick=e=>{e.preventDefault();toggle()};
+ addEventListener('keydown',e=>{if(e.key==='p'||e.key==='P')toggle();
+  else if(['ArrowRight','ArrowDown','PageDown',' '].includes(e.key)){e.preventDefault();show(cur+1)}
+  else if(['ArrowLeft','ArrowUp','PageUp'].includes(e.key)){e.preventDefault();show(cur-1)}
+  else if(e.key==='Escape'&&document.body.classList.contains('present'))toggle()});
+ addEventListener('click',e=>{if(document.body.classList.contains('present')&&!e.target.closest('.bar'))show(cur+(e.clientX>innerWidth/3?1:-1))});
+ addEventListener('resize',fit);fit();
+})();
+</script>
+</body></html>
