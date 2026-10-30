@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en"><head><meta charset="utf-8"><title>Pramana</title><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="Pramana: any claim, traced to the numbers it rests on. Demo day deck, Field Station Rajasthan.">
+<html lang="en"><head><meta charset="utf-8"><title>Pramana</title><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="Pramana: an open evidence graph built from research papers. Demo day deck, Field Station Rajasthan.">
 <style>
 @font-face{font-family:N;src:url(fonts/newsreader-latin-300-normal.woff2);font-weight:300}
 @font-face{font-family:N;src:url(fonts/newsreader-latin-400-normal.woff2);font-weight:400}
@@ -49,7 +49,7 @@ td.f{font-weight:600;white-space:nowrap}
   <div>
     <h1 style="font-size:240px;line-height:.9;letter-spacing:-0.035em">Pramana</h1>
     <p class="serif" style="font-size:34px;font-style:italic;font-weight:300;color:var(--dmuted);margin-top:28px">pramāṇa (Sanskrit): a valid means of knowing</p>
-    <p class="serif" style="font-size:60px;font-weight:300;line-height:1.15;margin-top:64px;max-width:1400px">Any claim, traced to the numbers it rests on.</p>
+    <p class="serif" style="font-size:48px;font-weight:300;line-height:1.2;margin-top:64px;max-width:1400px">An open evidence graph built from research papers, and an app to search it.</p>
   </div>
   <div style="display:flex;justify-content:space-between;align-items:end"><p style="font-size:28px">Amruth Deepak Bhat</p><p class="small">Built on Logos</p></div>
 </section>
@@ -234,21 +234,41 @@ td.f{font-weight:600;white-space:nowrap}
 </section>
 
 <!-- 9 engine -->
-<section class="s" style="gap:64px">
-  <h2>How a paper enters the knowledge base</h2>
-  <div style="display:grid;grid-template-columns:repeat(5,1fr);gap:0">
-    <div class="col" style="padding-right:32px"><span class="lab">1</span><p style="font-size:28px;color:var(--ink)">Fetch the full text, tables and supplements</p></div>
-    <div class="col" style="padding-right:32px"><span class="lab">2</span><p style="font-size:28px;color:var(--ink)">Two models extract every estimate independently</p></div>
-    <div class="col" style="padding-right:32px"><span class="lab">3</span><p style="font-size:28px;color:var(--ink)">A judge settles where they disagree</p></div>
-    <div class="col" style="padding-right:32px"><span class="lab">4</span><p style="font-size:28px;color:var(--ink)">Concepts pinned to Wikidata IDs</p></div>
-    <div class="col"><span class="lab">5</span><p style="font-size:28px;color:var(--ink)">Claims matched to the evidence</p></div>
+<section class="s" style="gap:36px;padding-top:96px">
+  <h2>How a paper is read</h2>
+  <svg viewBox="0 0 1664 600" width="1664" height="600" style="display:block"><defs><marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0 0L10 5L0 10z" fill="#18301F"/></marker></defs><rect x="0" y="150" width="290" height="150" rx="10" fill="#F4F3EE" stroke="#A9B3AB" stroke-width="2"/><text x="22" y="194" font-family="S" font-weight="600" font-size="27" fill="#18301F">Paper</text><text x="22" y="232" font-family="S" font-size="22" fill="#5F6F64">text, tables, figures</text><text x="22" y="262" font-family="S" font-size="22" fill="#5F6F64">and supplements</text><rect x="330" y="150" width="290" height="150" rx="10" fill="#F4F3EE" stroke="#A9B3AB" stroke-width="2"/><text x="352" y="194" font-family="S" font-weight="600" font-size="27" fill="#18301F">Parser</text><text x="352" y="232" font-family="S" font-size="22" fill="#5F6F64">every number gets an ID</text><text x="352" y="262" font-family="S" font-size="22" fill="#5F6F64">and its sentence or cell</text><rect x="660" y="30" width="290" height="150" rx="10" fill="#F4F3EE" stroke="#A9B3AB" stroke-width="2"/><text x="682" y="74" font-family="S" font-weight="600" font-size="27" fill="#18301F">Reader A</text><text x="682" y="112" font-family="S" font-size="22" fill="#5F6F64">Claude Haiku</text><text x="682" y="142" font-family="S" font-size="22" fill="#5F6F64">labels each number</text><rect x="660" y="270" width="290" height="150" rx="10" fill="#F4F3EE" stroke="#A9B3AB" stroke-width="2"/><text x="682" y="314" font-family="S" font-weight="600" font-size="27" fill="#18301F">Reader B</text><text x="682" y="352" font-family="S" font-size="22" fill="#5F6F64">Laya, open model</text><text x="682" y="382" font-family="S" font-size="22" fill="#5F6F64">on our own GPU</text><rect x="990" y="150" width="290" height="150" rx="10" fill="#F4F3EE" stroke="#A9B3AB" stroke-width="2"/><text x="1012" y="194" font-family="S" font-weight="600" font-size="27" fill="#18301F">Compare</text><text x="1012" y="232" font-family="S" font-size="22" fill="#5F6F64">field by field,</text><text x="1012" y="262" font-family="S" font-size="22" fill="#5F6F64">A against B</text><rect x="990" y="410" width="290" height="150" rx="10" fill="#F4F3EE" stroke="#A9B3AB" stroke-width="2"/><text x="1012" y="454" font-family="S" font-weight="600" font-size="27" fill="#18301F">Judge</text><text x="1012" y="492" font-family="S" font-size="22" fill="#5F6F64">Claude Sonnet,</text><text x="1012" y="522" font-family="S" font-size="22" fill="#5F6F64">disputes only</text><rect x="1374" y="150" width="290" height="150" rx="10" fill="#FFFFFF" stroke="#18301F" stroke-width="2"/><text x="1396" y="194" font-family="S" font-weight="600" font-size="27" fill="#18301F">Record</text><text x="1396" y="232" font-family="S" font-size="22" fill="#5F6F64">value, interval, group,</text><text x="1396" y="262" font-family="S" font-size="22" fill="#5F6F64">pointer to the source</text><rect x="1374" y="410" width="290" height="150" rx="10" fill="#F7D678" stroke="#E2A90F" stroke-width="2"/><text x="1396" y="454" font-family="S" font-weight="600" font-size="27" fill="#18301F">Logos Storage</text><text x="1396" y="492" font-family="S" font-size="22" fill="#5F6F64">snapshot hashed,</text><text x="1396" y="522" font-family="S" font-size="22" fill="#5F6F64">fetched by content ID</text><polyline points="290,225 326,225" fill="none" stroke="#18301F" stroke-width="2.5" marker-end="url(#ah)"/><polyline points="620,200 656,120" fill="none" stroke="#18301F" stroke-width="2.5" marker-end="url(#ah)"/><polyline points="620,250 656,330" fill="none" stroke="#18301F" stroke-width="2.5" marker-end="url(#ah)"/><polyline points="950,105 986,190" fill="none" stroke="#18301F" stroke-width="2.5" marker-end="url(#ah)"/><polyline points="950,345 986,262" fill="none" stroke="#18301F" stroke-width="2.5" marker-end="url(#ah)"/><polyline points="1280,200 1370,200" fill="none" stroke="#18301F" stroke-width="2.5" marker-end="url(#ah)"/><text x="1325" y="188" font-family="S" font-size="20" fill="#5F6F64" text-anchor="middle">agree</text><polyline points="1135,300 1135,406" fill="none" stroke="#18301F" stroke-width="2.5" marker-end="url(#ah)"/><text x="1147" y="362" font-family="S" font-size="20" fill="#5F6F64" text-anchor="start">disagree</text><polyline points="1280,485 1327,485 1327,262 1370,262" fill="none" stroke="#18301F" stroke-width="2.5" marker-end="url(#ah)"/><text x="1349" y="420" font-family="S" font-size="20" fill="#5F6F64" text-anchor="middle" transform="rotate(-90 1349 420)">settled</text><polyline points="1519,300 1519,406" fill="none" stroke="#18301F" stroke-width="2.5" marker-end="url(#ah)"/></svg>
+  <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:40px">
+    <div class="col" style="gap:6px"><p style="font:600 26px S">Readers never type a number</p><p style="font-size:22px;line-height:1.4;color:var(--body)">They cite the parser's ID, so a value cannot be invented.</p></div>
+    <div class="col" style="gap:6px"><p style="font:600 26px S">Two blind reads</p><p style="font-size:22px;line-height:1.4;color:var(--body)">Different models, no shared context.</p></div>
+    <div class="col" style="gap:6px"><p style="font:600 26px S">Judged, never averaged</p><p style="font-size:22px;line-height:1.4;color:var(--body)">Each dispute gets a decision and a reason.</p></div>
+    <div class="col" style="gap:6px"><p style="font:600 26px S">Arithmetic as a check</p><p style="font-size:22px;line-height:1.4;color:var(--body)">An estimate outside its own interval is flagged.</p></div>
   </div>
-  <div style="display:flex;gap:110px;margin-top:8px">
-    <div><p class="num" style="font-size:112px">1,055</p><p class="lede" style="font-size:26px;margin-top:10px">papers, seven topics</p></div>
-    <div><p class="num" style="font-size:112px">61,000+</p><p class="lede" style="font-size:26px;margin-top:10px">numbers, each linked to its sentence</p></div>
-    <div><p class="num" style="font-size:112px"><span class="mk">14¢</span></p><p class="lede" style="font-size:26px;margin-top:10px">per paper, all in</p></div>
+  <div class="foot"><span>Every step appends a SHA-256-chained ledger entry</span><span>16</span></div>
+</section>
+
+<!-- 9b eval and cost -->
+<section class="s" style="gap:40px;padding-top:96px">
+  <h2>How we chose the models, and what a paper costs</h2>
+  <div style="display:grid;grid-template-columns:1.55fr 1fr;gap:72px;align-items:start">
+    <table>
+      <tr><th style="width:36%">Model</th><th style="width:20%">Tested as</th><th style="width:26%">Agreement with blind consensus</th><th>Cost</th></tr>
+      <tr><td class="f">Claude Sonnet + Opus</td><td>two readers, 44 papers</td><td>0.990 median</td><td>too costly to scale</td></tr>
+      <tr><td class="f">Qwen3 30B, local</td><td>reader</td><td>κ 0.07, dropped</td><td>free</td></tr>
+      <tr><td class="f">Jev</td><td>judge</td><td>0.90 exact, 0.99 family</td><td>2¢ a paper</td></tr>
+      <tr><td class="f">Laya, out of the box</td><td>judge</td><td>0.09</td><td>free</td></tr>
+      <tr><td class="f">Laya, one night of tuning</td><td>judge</td><td>0.83 to 0.89</td><td>free, our GPU</td></tr>
+      <tr style="background:#F4F3EE"><td class="f">Haiku + Laya, Sonnet judge</td><td>production</td><td>1,055 papers</td><td><b>13¢ a paper</b></td></tr>
+    </table>
+    <div style="display:flex;flex-direction:column;gap:22px">
+      <div><p class="num" style="font-size:120px"><span class="mk">$13</span></p><p class="lede" style="font-size:28px;margin-top:8px">for 100 papers</p></div>
+      <table>
+        <tr><td style="font-size:30px">1,000 papers</td><td style="font-size:30px;text-align:right" class="num">$134</td></tr>
+        <tr><td style="font-size:30px">10,000 papers</td><td style="font-size:30px;text-align:right" class="num">$1,340</td></tr>
+      </table>
+      <p style="font-size:22px;line-height:1.45;color:var(--muted)">Measured: $141.27 of Anthropic API spend for the 1,055-paper build. The open model adds no per-paper fee.</p>
+    </div>
   </div>
-  <div class="foot"><span>Readers: Claude Haiku and Laya, a small open model on our own GPU. Judge: Claude Sonnet.</span><span>16</span></div>
+  <div class="foot"><span>When both blind readers agree they are almost always right: in 60 rows where Jev disagreed with both, Jev was right once.</span><span>17</span></div>
 </section>
 
 <!-- 10 logos -->
@@ -261,7 +281,7 @@ td.f{font-weight:600;white-space:nowrap}
     <tr><td>Readers add the source a post left out</td><td>Messaging: notes travel peer to peer</td><td>next</td></tr>
     <tr><td>Notes agreed across sides outrank one side</td><td>Blockchain: stake on bridging ratings</td><td>next</td></tr>
   </table>
-  <div class="foot"><span>Snapshot on Logos Storage: zDvZRwzm1sq9mZA6qVdigHnzPFos7zbzH4QEukk3VLMjhZTxDnGB</span><span>17</span></div>
+  <div class="foot"><span>Snapshot on Logos Storage: zDvZRwzm1sq9mZA6qVdigHnzPFos7zbzH4QEukk3VLMjhZTxDnGB</span><span>18</span></div>
 </section>
 
 <!-- 11 demo -->
@@ -274,7 +294,7 @@ td.f{font-weight:600;white-space:nowrap}
     <div class="col" style="border-color:var(--dtext)"><p class="num" style="font-size:80px;color:var(--mark)">4</p><p style="font-size:30px;line-height:1.35;color:var(--dtext)">Match the snapshot’s content ID on Logos Storage</p></div>
   </div>
   <p class="small" style="font-size:28px">Then yours: bring any claim about coffee, aging, diabetes or AI water.</p>
-  <div class="foot"><span>Live demo</span><span>18</span></div>
+  <div class="foot"><span>Live demo</span><span>19</span></div>
 </section>
 
 <!-- 12 security -->
@@ -297,7 +317,7 @@ td.f{font-weight:600;white-space:nowrap}
     <p style="font-size:27px;line-height:1.4;color:var(--body)">Extraction accuracy against human annotators: not yet measured.</p>
     <p style="font-size:27px;line-height:1.4;color:var(--body)">English text only.</p>
   </div>
-  <div class="foot"><span>Tested core path: snapshot loads in 0.7 s; queries checked against the source graph</span><span>19</span></div>
+  <div class="foot"><span>Tested core path: snapshot loads in 0.7 s; queries checked against the source graph</span><span>20</span></div>
 </section>
 
 <!-- 13 privacy -->
@@ -311,14 +331,14 @@ td.f{font-weight:600;white-space:nowrap}
     <tr><td>A note you choose to post</td><td>Signed with your key</td></tr>
   </table>
   <p class="lede" style="max-width:1600px">Lookups run on the user’s machine, so checking a health or political claim leaves no record anywhere. Two of the seven topics came from residents’ requests this week.</p>
-  <div class="foot"><span>Track fit</span><span>20</span></div>
+  <div class="foot"><span>Track fit</span><span>21</span></div>
 </section>
 
 <!-- 13b use cases -->
 <section class="s" style="gap:48px">
   <h2>Where a receipt changes a decision</h2>
   <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:48px 48px"><div class="col" style="gap:10px"><h3 style="font:600 30px/1.2 S">Newsrooms</h3><p style="font-size:25px;line-height:1.4;color:var(--body)">A receipt beside every science claim, checked before it ships.</p></div><div class="col" style="gap:10px"><h3 style="font:600 30px/1.2 S">Community notes</h3><p style="font-size:25px;line-height:1.4;color:var(--body)">Notes that carry the numbers, not just a link.</p></div><div class="col" style="gap:10px"><h3 style="font:600 30px/1.2 S">AI assistants</h3><p style="font-size:25px;line-height:1.4;color:var(--body)">Answers that cite receipts instead of memory, through an MCP server.</p></div><div class="col" style="gap:10px"><h3 style="font:600 30px/1.2 S">Regulators</h3><p style="font-size:25px;line-height:1.4;color:var(--body)">Water permits for data centers in Rajasthan decided on counted water, not headlines.</p></div><div class="col" style="gap:10px"><h3 style="font:600 30px/1.2 S">Courts</h3><p style="font-size:25px;line-height:1.4;color:var(--body)">Every number in an expert report traced to its source.</p></div><div class="col" style="gap:10px"><h3 style="font:600 30px/1.2 S">Journals and reviewers</h3><p style="font-size:25px;line-height:1.4;color:var(--body)">A citation audit of each manuscript before it is accepted.</p></div><div class="col" style="gap:10px"><h3 style="font:600 30px/1.2 S">Funders</h3><p style="font-size:25px;line-height:1.4;color:var(--body)">A map of where evidence is thin, to decide which replications to pay for.</p></div><div class="col" style="gap:10px"><h3 style="font:600 30px/1.2 S">Prediction markets</h3><p style="font-size:25px;line-height:1.4;color:var(--body)">Questions that resolve on the evidence record.</p></div></div>
-  <div class="foot"><span>Use cases</span><span>21</span></div>
+  <div class="foot"><span>Use cases</span><span>22</span></div>
 </section>
 
 <!-- 14 adoption -->
@@ -330,7 +350,7 @@ td.f{font-weight:600;white-space:nowrap}
     <div class="col"><h3>Contributors</h3><p>Labs and journal clubs add the papers in their field, with their own API keys.</p></div>
   </div>
   <p class="lede" style="max-width:1600px">Feedback: disputes filed by readers become labeled examples for retraining the open extraction model. An MCP server lets AI agents query the same knowledge base.</p>
-  <div class="foot"><span>Path to adoption</span><span>22</span></div>
+  <div class="foot"><span>Path to adoption</span><span>23</span></div>
 </section>
 
 <!-- 15 milestones -->
@@ -341,7 +361,7 @@ td.f{font-weight:600;white-space:nowrap}
     <div class="col"><span class="lab">2 · Pilot</span><p style="color:var(--ink);font-size:30px">Two desks use it for a month. Accuracy measured against human annotators. A public report of what broke.</p></div>
     <div class="col"><span class="lab">3 · Adoption</span><p style="color:var(--ink);font-size:30px">Agreement checking across independent contributors. Notes over Messaging. MCP server. Self-audit. A named operator running a node.</p></div>
   </div>
-  <div class="foot"><span>Owner: Amruth Deepak Bhat</span><span>23</span></div>
+  <div class="foot"><span>Owner: Amruth Deepak Bhat</span><span>24</span></div>
 </section>
 
 <!-- 16 close -->
