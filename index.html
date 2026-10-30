@@ -196,6 +196,17 @@ td.f{font-weight:600;white-space:nowrap}
   <div class="foot"><span>Pramana app</span><span>12</span></div>
 </section>
 
+<!-- 8a2 basecamp -->
+<section class="s" style="display:grid;grid-template-columns:560px 1fr;gap:72px;align-items:center;padding-top:96px">
+  <div style="display:flex;flex-direction:column;gap:32px">
+    <h2 style="font-size:64px">Running inside Logos Basecamp</h2>
+    <p style="font-size:30px;line-height:1.45;color:var(--body)">Two modules: a C++ core that holds the evidence graph in a local SQLite database, and a QML screen. Queries never leave the machine.</p>
+    <p style="font-size:30px;line-height:1.45;color:var(--body)">The snapshot is fetched from Logos Storage by its content ID.</p>
+  </div>
+  <img class="shot" src="img/basecamp_live.png" style="width:100%">
+  <div class="foot"><span>Basecamp 0.3.2, 30 October 2026</span><span>13</span></div>
+</section>
+
 <!-- 8b protocol -->
 <section class="s" style="gap:48px">
   <h2>Pramana protocol: shared data, separate lenses</h2>
@@ -204,7 +215,7 @@ td.f{font-weight:600;white-space:nowrap}
 <div class="col"><span class="lab">Lenses</span><h3 style="font:600 30px/1.25 S">Signed rules that interpret the data</h3><p style="font-size:25px">A lens decides what counts as faithful, inflated or causal. Pramana’s fidelity lens v1 is one. Anyone can publish another.</p></div><div class="col"><span class="lab">Readers</span><h3 style="font:600 30px/1.25 S">Any client</h3><p style="font-size:25px">Query a local copy through any lens, or none. Where two lenses disagree, the reader sees both.</p></div>
   </div>
   <p class="lede" style="max-width:1600px">Judgments never enter the data layer. People can argue about lenses because the facts underneath are shared.</p>
-  <div class="foot"><span>Contribute: adb3502.github.io/pramana-protocol/contribute</span><span>13</span></div>
+  <div class="foot"><span>Contribute: adb3502.github.io/pramana-protocol/contribute</span><span>14</span></div>
 </section>
 
 <!-- 8c architecture -->
@@ -218,7 +229,7 @@ td.f{font-weight:600;white-space:nowrap}
     <div style="border-top:3px solid #E2A90F;padding-top:14px"><p style="font:600 26px S">Pramana app</p><p style="font-size:22px;color:var(--muted)">One reader of the shared knowledge base.</p></div>
   </div>
   <p class="lede" style="font-size:28px;max-width:1660px">The pipeline records input and output hashes in an append-only ledger, and every extracted number keeps a pointer to the sentence, table or figure it came from.</p>
-  <div class="foot"><span>Yellow: the Logos layer</span><span>14</span></div>
+  <div class="foot"><span>Yellow: the Logos layer</span><span>15</span></div>
 </section>
 
 <!-- 9 engine -->
@@ -236,7 +247,7 @@ td.f{font-weight:600;white-space:nowrap}
     <div><p class="num" style="font-size:112px">61,000+</p><p class="lede" style="font-size:26px;margin-top:10px">numbers, each linked to its sentence</p></div>
     <div><p class="num" style="font-size:112px"><span class="mk">14¢</span></p><p class="lede" style="font-size:26px;margin-top:10px">per paper, all in</p></div>
   </div>
-  <div class="foot"><span>Readers: Claude Haiku and Laya, a small open model on our own GPU. Judge: Claude Sonnet.</span><span>15</span></div>
+  <div class="foot"><span>Readers: Claude Haiku and Laya, a small open model on our own GPU. Judge: Claude Sonnet.</span><span>16</span></div>
 </section>
 
 <!-- 10 logos -->
@@ -245,11 +256,11 @@ td.f{font-weight:600;white-space:nowrap}
   <table>
     <tr><th style="width:38%">What a receipt needs</th><th style="width:44%">Logos does the work</th><th style="width:18%">Status</th></tr>
     <tr><td>Proof it wasn’t edited after printing</td><td>Storage: every evidence snapshot has a content ID</td><td>live</td></tr>
-    <tr><td>Looking up a claim reveals nothing about you</td><td>Basecamp: the graph runs on your machine</td><td>built</td></tr>
+    <tr><td>Looking up a claim reveals nothing about you</td><td>Basecamp: the graph runs on your machine</td><td>live</td></tr>
     <tr><td>Readers add the source a post left out</td><td>Messaging: notes travel peer to peer</td><td>next</td></tr>
     <tr><td>Notes agreed across sides outrank one side</td><td>Blockchain: stake on bridging ratings</td><td>next</td></tr>
   </table>
-  <div class="foot"><span>Snapshot on Logos Storage: zDvZRwzm1sq9mZA6qVdigHnzPFos7zbzH4QEukk3VLMjhZTxDnGB</span><span>16</span></div>
+  <div class="foot"><span>Snapshot on Logos Storage: zDvZRwzm1sq9mZA6qVdigHnzPFos7zbzH4QEukk3VLMjhZTxDnGB</span><span>17</span></div>
 </section>
 
 <!-- 11 demo -->
@@ -262,7 +273,7 @@ td.f{font-weight:600;white-space:nowrap}
     <div class="col" style="border-color:var(--dtext)"><p class="num" style="font-size:80px;color:var(--mark)">4</p><p style="font-size:30px;line-height:1.35;color:var(--dtext)">Match the snapshot’s content ID on Logos Storage</p></div>
   </div>
   <p class="small" style="font-size:28px">Then yours: bring any claim about coffee, aging, diabetes or AI water.</p>
-  <div class="foot"><span>Live demo</span><span>17</span></div>
+  <div class="foot"><span>Live demo</span><span>18</span></div>
 </section>
 
 <!-- 12 security -->
@@ -285,7 +296,7 @@ td.f{font-weight:600;white-space:nowrap}
     <p style="font-size:27px;line-height:1.4;color:var(--body)">Extraction accuracy against human annotators: not yet measured.</p>
     <p style="font-size:27px;line-height:1.4;color:var(--body)">English text only.</p>
   </div>
-  <div class="foot"><span>Tested core path: snapshot loads in 0.7 s; queries checked against the source graph</span><span>18</span></div>
+  <div class="foot"><span>Tested core path: snapshot loads in 0.7 s; queries checked against the source graph</span><span>19</span></div>
 </section>
 
 <!-- 13 privacy -->
@@ -299,14 +310,14 @@ td.f{font-weight:600;white-space:nowrap}
     <tr><td>A note you choose to post</td><td>Signed with your key</td></tr>
   </table>
   <p class="lede" style="max-width:1600px">Lookups run on the user’s machine, so checking a health or political claim leaves no record anywhere. Two of the seven topics came from residents’ requests this week.</p>
-  <div class="foot"><span>Track fit</span><span>19</span></div>
+  <div class="foot"><span>Track fit</span><span>20</span></div>
 </section>
 
 <!-- 13b use cases -->
 <section class="s" style="gap:48px">
   <h2>Where a receipt changes a decision</h2>
   <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:48px 48px"><div class="col" style="gap:10px"><h3 style="font:600 30px/1.2 S">Newsrooms</h3><p style="font-size:25px;line-height:1.4;color:var(--body)">A receipt beside every science claim, checked before it ships.</p></div><div class="col" style="gap:10px"><h3 style="font:600 30px/1.2 S">Community notes</h3><p style="font-size:25px;line-height:1.4;color:var(--body)">Notes that carry the numbers, not just a link.</p></div><div class="col" style="gap:10px"><h3 style="font:600 30px/1.2 S">AI assistants</h3><p style="font-size:25px;line-height:1.4;color:var(--body)">Answers that cite receipts instead of memory, through an MCP server.</p></div><div class="col" style="gap:10px"><h3 style="font:600 30px/1.2 S">Regulators</h3><p style="font-size:25px;line-height:1.4;color:var(--body)">Water permits for data centers in Rajasthan decided on counted water, not headlines.</p></div><div class="col" style="gap:10px"><h3 style="font:600 30px/1.2 S">Courts</h3><p style="font-size:25px;line-height:1.4;color:var(--body)">Every number in an expert report traced to its source.</p></div><div class="col" style="gap:10px"><h3 style="font:600 30px/1.2 S">Journals and reviewers</h3><p style="font-size:25px;line-height:1.4;color:var(--body)">A citation audit of each manuscript before it is accepted.</p></div><div class="col" style="gap:10px"><h3 style="font:600 30px/1.2 S">Funders</h3><p style="font-size:25px;line-height:1.4;color:var(--body)">A map of where evidence is thin, to decide which replications to pay for.</p></div><div class="col" style="gap:10px"><h3 style="font:600 30px/1.2 S">Prediction markets</h3><p style="font-size:25px;line-height:1.4;color:var(--body)">Questions that resolve on the evidence record.</p></div></div>
-  <div class="foot"><span>Use cases</span><span>20</span></div>
+  <div class="foot"><span>Use cases</span><span>21</span></div>
 </section>
 
 <!-- 14 adoption -->
@@ -318,7 +329,7 @@ td.f{font-weight:600;white-space:nowrap}
     <div class="col"><h3>Contributors</h3><p>Labs and journal clubs add the papers in their field, with their own API keys.</p></div>
   </div>
   <p class="lede" style="max-width:1600px">Feedback: disputes filed by readers become labeled examples for retraining the open extraction model. An MCP server lets AI agents query the same knowledge base.</p>
-  <div class="foot"><span>Path to adoption</span><span>21</span></div>
+  <div class="foot"><span>Path to adoption</span><span>22</span></div>
 </section>
 
 <!-- 15 milestones -->
@@ -329,7 +340,7 @@ td.f{font-weight:600;white-space:nowrap}
     <div class="col"><span class="lab">2 · Pilot</span><p style="color:var(--ink);font-size:30px">Two desks use it for a month. Accuracy measured against human annotators. A public report of what broke.</p></div>
     <div class="col"><span class="lab">3 · Adoption</span><p style="color:var(--ink);font-size:30px">Agreement checking across independent contributors. Notes over Messaging. MCP server. Self-audit. A named operator running a node.</p></div>
   </div>
-  <div class="foot"><span>Owner: Amruth Deepak Bhat</span><span>22</span></div>
+  <div class="foot"><span>Owner: Amruth Deepak Bhat</span><span>23</span></div>
 </section>
 
 <!-- 16 close -->
